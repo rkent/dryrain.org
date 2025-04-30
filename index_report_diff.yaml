@@ -1,0 +1,44 @@
+---
+adds:
+  rosdeps:
+  - libc++-dev
+  repos: []
+  repo_instances:
+  - github-clearpath-gbp-acado-release
+  packages:
+  - abb_irb2400_moveit_plugins
+  - abb_common
+  - abb_moveit_plugins
+  - irb_2400_moveit_config
+  - irb_6640_moveit_config
+  - mobile
+  - ros_full
+dels:
+  rosdeps: []
+  repos:
+  - control_msgs
+  repo_instances:
+  - github-ros-controls-control_msgs
+  packages:
+  - control_msgs
+mods:
+  rosdeps:
+  - vim
+  repos:
+  - acado
+  repo_instances:
+  - github-ros-industrial-abb
+  - github-ros-industrial-abb_driver
+  - github-ros-industrial-abb_robot_driver_interfaces
+  - github-Eurecat-abseil-cpp
+  - github-tud-cor-acado
+  - github-ros-drivers-ackermann_msgs
+  - github-ros-actionlib
+  - github-tork-a-adi_driver
+  - github-ubi-agni-agni_tf_tools
+  - github-AinsteinAI-ainstein_radar
+  - github-ros-metapackages
+  - github-ros2-variants
+  packages:
+  - abb_driver
+  - acado

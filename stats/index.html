@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ROS Index</title>
+    <meta name="description" content="a community-maintained index of robotics software
+">
+
+    
+    <link rel="canonical" href="https://index.ros.org/stats/">
+    
+    
+    <link rel="icon" sizes="any" type="image/svg+xml" href="/assets/rosindex_logo.svg">
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/main.css">
+    
+
+    
+
+    <script type="text/javascript" src=/js/jquery.js></script>
+    <script src=/bootstrap/js/bootstrap.min.js type="text/javascript"></script>
+    <script src=/js/jquery-cookie.js type="text/javascript"></script>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVD5Z6G6NH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EVD5Z6G6NH');
+</script>
+
+    <script type="text/javascript" src=/js/toc.js></script>
+
+    <script src=/js/distro_switch.js></script>
+  </head>
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <div class="container-fluid" style="margin-bottom: 10px">
+      <div class="row">
+        <!-- title -->
+        <div class="col-xs-3" style="white-space:nowrap">
+          <a class="site-title" href="/">
+            <img src="/assets/rosindex_logo.svg" width="26" height="26" alt="ROS index logo" style="padding-bottom: 3px"/>
+            ROS Index</a>
+        </div>
+        <!-- main internal links -->
+        <div class="col-xs-6 text-center" style="padding:0px">
+          <div class="btn-group hidden-xs" role="group" aria-label="..." style="padding: 6px">
+            <div class="btn-group" role="group">
+              <a href="/?search_packages=true" class="btn btn-default" role="button">Package List</a>
+            </div>
+            <div class="btn-group" role="group">
+              <a href="/?search_repos=true" class="btn btn-default" role="button">Repository List</a>
+            </div>
+            <div class="btn-group" role="group">
+              <a href="/search_deps" class="btn btn-default" role="button">System Dependencies</a>
+            </div>
+          </div>
+          <div class="hidden-lg hidden-md hidden-sm">
+            <button id="hLabel" class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Lists <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="hLabel">
+              <li><a href="/?search_packages=true">Package List</a></li>
+              <li><a href="/?search_repos=true">Repository List</a></li>
+              <li><a href="/search_deps">System Dependencies</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- additional links -->
+        <div class="col-xs-3 text-right" style="white-space:nowrap; padding:0px">
+          <ul class="list-inline" style="margin-bottom:0px;">
+            <li class="dropdown hidden-xs hidden-sm">
+              <button id="rLabel" class="btn btn-link" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ROS Resources <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="rLabel">
+                <li><a href="http://docs.ros.org/">Documentation</a></li>
+                <li><a href="http://wiki.ros.org/Support">Support</a></li>
+                <li><a href="http://discourse.ros.org/">Discussion Forum</a></li>
+                <li><a href="http://status.ros.org/">Service Status</a></li>
+                <li><a href="https://robotics.stackexchange.com/questions/tagged/ros">ros @ Robotics Stack Exchange</a></li>
+                <li><a href="https://docs.ros.org/en/ros2_packages/">Package API</a></li>
+              </ul>
+            </li>
+            <li class="dropdown hidden-xs hidden-sm">
+              <button id="aLabel" class="btn btn-link" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="aLabel">
+                <li><a href="/about">About </a></li>
+                <li><a href="/contribute">Contribute</a></li>
+                <li><a href="/help">Help</a></li>
+                <li><a href="/stats">Stats</a></li>
+              </ul>
+            </li>
+            <li class="dropdown hidden-md hidden-lg">
+              <button id="qLabel" class="btn btn-link" type="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Resources <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="qLabel">
+                <li><a href="/about">About </a></li>
+                <li><a href="/contribute">Contribute</a></li>
+                <li><a href="/help">Help</a></li>
+                <li><a href="/stats">Stats</a></li>
+                <hr style="margin:7px" />
+                <li><a href="http://docs.ros.org/">Documentation</a></li>
+                <li><a href="http://wiki.ros.org/Support">Support</a></li>
+                <li><a href="http://discourse.ros.org/">Discussion Forum</a></li>
+                <li><a href="http://status.ros.org/">Service Status</a></li>
+                <li><a href="https://robotics.stackexchange.com/questions/tagged/ros">ros @ Robotics Stack Exchange</a></li>
+                <li><a href="https://docs.ros.org/en/ros2_packages/">Package API</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container-fluid" style="margin-top:20px">
+  <div class="container-fluid">
+    <div class="row">
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li class="active">Statistics</li>
+      </ol>
+    </div>
+    <div class="row">
+      &nbsp;
+    </div>
+    <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title">Index</h3></div>
+        <div class="panel-body" style="overflow-x:auto;">
+          <ul>
+            <li><strong>Repositories:</strong> 14</li>
+            <li><strong>Packages:</strong> 287</li>
+            <li><strong>Errors:</strong> <a href="/stats/errors">0</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title">Known Packages</h3></div>
+        <div class="panel-body" style="overflow-x:auto;">
+          <div class="venn text-center"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      &nbsp;
+    </div>
+    <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title">Distro Activity</h3></div>
+        <div class="panel-body" style="overflow-x:auto;">
+          <p>
+          Below are histograms of repositories updated over the last 2000 days in each distro.
+          </p>
+
+        
+          
+          <h3>humble <small>2 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_humble" class="text-center"></div>
+        
+          
+          <h3>jazzy <small>2 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_jazzy" class="text-center"></div>
+        
+          
+          <h3>rolling <small>2 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_rolling" class="text-center"></div>
+        
+          
+          <h3>noetic <small>9 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_noetic" class="text-center"></div>
+        
+          
+          <h3>ardent <small>1 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_ardent" class="text-center"></div>
+        
+          
+          <h3>bouncy <small>1 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_bouncy" class="text-center"></div>
+        
+          
+          <h3>crystal <small>1 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_crystal" class="text-center"></div>
+        
+          
+          <h3>eloquent <small>1 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_eloquent" class="text-center"></div>
+        
+          
+          <h3>dashing <small>2 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_dashing" class="text-center"></div>
+        
+          
+          <h3>galactic <small>2 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_galactic" class="text-center"></div>
+        
+          
+          <h3>foxy <small>2 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_foxy" class="text-center"></div>
+        
+          
+          <h3>iron <small>2 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_iron" class="text-center"></div>
+        
+          
+          <h3>lunar <small>5 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_lunar" class="text-center"></div>
+        
+          
+          <h3>jade <small>3 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_jade" class="text-center"></div>
+        
+          
+          <h3>indigo <small>8 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_indigo" class="text-center"></div>
+        
+          
+          <h3>hydro <small>5 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_hydro" class="text-center"></div>
+        
+          
+          <h3>kinetic <small>11 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_kinetic" class="text-center"></div>
+        
+          
+          <h3>melodic <small>12 repos</small></h3>
+          <br><br>
+          <div id="activity_hist_melodic" class="text-center"></div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+Adapted from https://github.com/benfred/venn.js/blob/master/examples/intersection_tooltip.html
+ -->
+<style>
+.venn {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+.venntooltip {
+  position: absolute;
+  text-align: center;
+  width: 128px;
+  height: 24px;
+  background: #333;
+  color: #ddd;
+  padding: 2px;
+  border: 0px;
+  border-radius: 8px;
+  opacity: 0;
+}
+</style>
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="/js/venn.js"></script>
+<script src="/js/mds.js"></script>
+<script src="/js/numeric.js"></script>
+<script>
+// define sets and set set intersections
+var sets = [
+    
+      {sets: ["humble"], size: 7},
+    
+      {sets: ["jazzy"], size: 7},
+    
+      {sets: ["rolling"], size: 7},
+    
+      {sets: ["noetic"], size: 52},
+    
+  ],
+  overlaps = [
+    
+      {sets: ["humble", "jazzy"], size: 7},
+    
+      {sets: ["humble", "rolling"], size: 7},
+    
+      {sets: ["humble", "noetic"], size: 6},
+    
+      {sets: ["jazzy", "rolling"], size: 7},
+    
+      {sets: ["jazzy", "noetic"], size: 6},
+    
+      {sets: ["rolling", "noetic"], size: 6},
+    
+      {sets: ["humble", "jazzy", "rolling"], size: 7},
+    
+      {sets: ["humble", "jazzy", "noetic"], size: 6},
+    
+      {sets: ["humble", "rolling", "noetic"], size: 6},
+    
+      {sets: ["jazzy", "rolling", "noetic"], size: 6},
+    
+      {sets: ["humble", "jazzy", "rolling", "noetic"], size: 6},
+    
+  ];
+  sets = sets.concat(overlaps);
+
+// draw the diagram in the 'venn' div
+var diagram = venn.VennDiagram();
+var div = d3.select(".venn")
+div.datum(sets).call(diagram);
+
+// add a tooltip showing the size of each set/intersection
+var tooltip = d3.select("body").append("div")
+    .attr("class", "venntooltip");
+
+div.selectAll("path")
+  .style("stroke-opacity", 0)
+  .style("stroke", "#fff")
+  .style("stroke-width", 3)
+
+// add listeners to all the groups to display tooltip on mouseover
+div.selectAll("g")
+    .on("mouseover", function(event, d) {
+        // sort all the areas relative to the current item
+        venn.sortAreas(div, d);
+
+        // Display a tooltip with the current size
+        tooltip.transition().duration(400).style("opacity", .9);
+        tooltip.text(d.size + " packages");
+
+        // highlight the current path
+        var selection = d3.select(this).transition("tooltip").duration(400);
+        selection.select("path")
+            .style("fill-opacity", d.sets.length == 1 ? .4 : .1)
+            .style("stroke-opacity", 1);
+    })
+
+    .on("mousemove", function(event) {
+        tooltip.style("left", (event.pageX) + "px")
+               .style("top", (event.pageY - 28) + "px");
+    })
+
+    .on("mouseout", function(event, d) {
+        tooltip.transition().duration(400).style("opacity", 0);
+        var selection = d3.select(this).transition("tooltip").duration(400);
+        selection.select("path")
+            .style("fill-opacity", d.sets.length == 1 ? .25 : .0)
+            .style("stroke-opacity", 0);
+    });
+</script>
+
+<style>
+.bar rect {
+  fill: #158cba;
+  shape-rendering: crispEdges;
+}
+
+.bar text {
+  fill: #fff;
+  font-size: 15px;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.histtooltip {
+  position: absolute;
+  text-align: center;
+  width: 40px;
+  height: 24px;
+  background: #333;
+  color: #ddd;
+  padding: 2px;
+  border: 0px;
+  border-radius: 8px;
+  opacity: 0;
+}
+</style>
+
+
+<script>
+
+function makeHist(selector, values) {
+  // A formatter for counts.
+  var formatCount = d3.format(",.0f");
+
+  var margin = {top: 10, right: 30, bottom: 30, left: 30},
+      width = 650 - margin.left - margin.right,
+      height = 150 - margin.top - margin.bottom;
+
+  var max_age = 2000;
+  var x = d3.scaleLinear()
+      .domain([1, max_age])
+      .range([0, width]);
+
+  // Generate a histogram using thirty uniformly-spaced bins.
+  var histogram = d3.histogram()
+      .domain(x.domain())
+      .thresholds(x.ticks(30))
+  var data  = histogram(values)
+
+  var y = d3.scaleLinear()
+      .domain([0, d3.max(data, function(d) { return d.length || 1; })])
+      .range([height, 0]);
+
+  var xAxis = d3.axisBottom()
+      .scale(x);
+
+  var svg = d3.select(selector).append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", function(d) {
+        return "translate(" + margin.left + "," + margin.top + ")";
+      });
+
+  var bar = svg.selectAll(".bar")
+      .data(data)
+    .enter().append("g")
+      .attr("class", "bar")
+      .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; });
+
+  var tooltip = d3.select("body").append("div")
+    .attr("class", "histtooltip");
+
+  bar.append("rect")
+      .attr("x", 1)
+      .attr("width", function(d) { return x(d.x1) - x(d.x0)- 1; })
+      .attr("height", function(d) { 
+        return height - y(d.length); 
+      })
+      .on("mouseover", function(event, d) {
+          d3.select(this).transition()
+          .style("fill-opacity", .1)
+          .style("stroke-opacity", 1);
+          tooltip.transition().style("opacity", .9);
+          tooltip.text(d.length);
+          })
+      .on("mouseout", function(event, d) {
+          d3.select(this).transition()
+          .style("fill-opacity", 1)
+          .style("stroke-opacity", 0);
+          tooltip.transition().style("opacity", 0);
+      })
+      .on("mousemove", function(event) {
+          tooltip.style("left", (event.pageX) + "px")
+                 .style("top", (event.pageY - 28) + "px");
+      });
+
+      /*
+  bar.append("text")
+      .attr("dy", ".75em")
+      .attr("y", 6)
+      .attr("x", x(data[0].dx) / 2)
+      .attr("text-anchor", "middle")
+      .text(function(d) { return formatCount(d.y); });
+      */
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+}
+
+
+  
+  var values_humble = [
+      1177.8017293727175,
+      1085.8017293727175,];
+  makeHist('#activity_hist_humble', values_humble);
+
+  
+  var values_jazzy = [
+      1177.8017293727175,
+      365.80172937271766,];
+  makeHist('#activity_hist_jazzy', values_jazzy);
+
+  
+  var values_rolling = [
+      1177.8017293727175,
+      5.801729372717662,];
+  makeHist('#activity_hist_rolling', values_rolling);
+
+  
+  var values_noetic = [
+      22.801729372717663,
+      1402.8017293727175,
+      798.8017293727177,
+      1813.8017293727178,
+      5.801729372717662,
+      199.80172937271766,
+      429.80172937271766,
+      1251.8017293727175,
+      1806.8017293727178,];
+  makeHist('#activity_hist_noetic', values_noetic);
+
+  
+  var values_ardent = [
+      2476.801729372718,];
+  makeHist('#activity_hist_ardent', values_ardent);
+
+  
+  var values_bouncy = [
+      2478.801729372718,];
+  makeHist('#activity_hist_bouncy', values_bouncy);
+
+  
+  var values_crystal = [
+      2331.801729372718,];
+  makeHist('#activity_hist_crystal', values_crystal);
+
+  
+  var values_eloquent = [
+      1602.8017293727175,];
+  makeHist('#activity_hist_eloquent', values_eloquent);
+
+  
+  var values_dashing = [
+      1177.8017293727175,
+      1754.8017293727178,];
+  makeHist('#activity_hist_dashing', values_dashing);
+
+  
+  var values_galactic = [
+      1177.8017293727175,
+      1504.8017293727175,];
+  makeHist('#activity_hist_galactic', values_galactic);
+
+  
+  var values_foxy = [
+      1177.8017293727175,
+      1757.8017293727178,];
+  makeHist('#activity_hist_foxy', values_foxy);
+
+  
+  var values_iron = [
+      1177.8017293727175,
+      1085.8017293727175,];
+  makeHist('#activity_hist_iron', values_iron);
+
+  
+  var values_lunar = [
+      2144.801729372718,
+      1813.8017293727178,
+      1713.8017293727178,
+      199.80172937271766,
+      2584.801729372718,];
+  makeHist('#activity_hist_lunar', values_lunar);
+
+  
+  var values_jade = [
+      1813.8017293727178,
+      1713.8017293727178,
+      2585.801729372718,];
+  makeHist('#activity_hist_jade', values_jade);
+
+  
+  var values_indigo = [
+      2956.801729372718,
+      2144.801729372718,
+      1813.8017293727178,
+      1713.8017293727178,
+      1181.8017293727175,
+      199.80172937271766,
+      2584.801729372718,
+      3698.801729372718,];
+  makeHist('#activity_hist_indigo', values_indigo);
+
+  
+  var values_hydro = [
+      3612.801729372718,
+      1813.8017293727178,
+      3556.801729372718,
+      3877.801729372718,
+      3698.801729372718,];
+  makeHist('#activity_hist_hydro', values_hydro);
+
+  
+  var values_kinetic = [
+      2052.801729372718,
+      1402.8017293727175,
+      798.8017293727177,
+      2144.801729372718,
+      2225.801729372718,
+      1813.8017293727178,
+      1713.8017293727178,
+      1181.8017293727175,
+      199.80172937271766,
+      429.80172937271766,
+      2584.801729372718,];
+  makeHist('#activity_hist_kinetic', values_kinetic);
+
+  
+  var values_melodic = [
+      2052.801729372718,
+      1402.8017293727175,
+      798.8017293727177,
+      2144.801729372718,
+      2225.801729372718,
+      1813.8017293727178,
+      1713.8017293727178,
+      1181.8017293727175,
+      199.80172937271766,
+      429.80172937271766,
+      1251.8017293727175,
+      1826.8017293727178,];
+  makeHist('#activity_hist_melodic', values_melodic);
+
+
+</script>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div style="float:left;">
+        
+          <a href="https://github.com/ros-infrastructure/rosindex" title="Find rosindex in Github">
+          <span class="icon  icon--github">
+            <svg viewBox="0 0 16 16">
+              <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+            </svg>
+          </span>
+
+          <span class="username">ros-infrastructure/rosindex</span>
+        </a>
+        <em class="hidden-xs">| generated on 2025-04-30</em>
+      
+      </div>
+      <div style="float:right;">
+        <p class="text"><span class="hidden-xs">a community-maintained index of robotics software
+ | </span><a href="/privacy.txt">privacy</a></p>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
